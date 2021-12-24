@@ -1,15 +1,15 @@
 require './src/model/word'
 MAX_LETTER_CODE=26
 module WordServiceValue
-    def WordServiceValue.calculateWordMaxValue (word)
-        letter_iterations = WordServiceValue.countWordLettersIterations(word)
+    def WordServiceValue.calculateWordMaxValue (input_word)
+        word=Word.new(input_word)
+        letter_iterations = WordServiceValue.countWordLettersIterations(word.structure)
         multiplier = MAX_LETTER_CODE
-        word_value = 0
         letter_iterations.each do |element|
-            word_value = word_value + element*multiplier
+            word.value = word.value + element*multiplier
             multiplier = multiplier - 1
         end
-        return word_value
+        return word.value
     end
     def WordServiceValue.countWordLettersIterations(word)
         subword = word

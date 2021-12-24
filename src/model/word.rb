@@ -1,7 +1,7 @@
 class Word
-    def initialize(estructura)
-        @estructura=estructura
-        @valor=0;
+    def initialize(structure)
+        @structure=structure
+        @value=0;
     end
-    attr_accessor:estructura,:valor
+    attr_accessor:structure,:value
 end
