@@ -3,9 +3,17 @@ This following program is the solution for a Challenge
 
 Contents
 ========
+ * [Run](#run)
  * [Arquitecture](#arquitecture)
  * [Approach and Methodology](#approach-and-methodology)
 
+
+## Run
+
+To run the application use
+```sh
+ruby index.rb
+```
 
 ## Arquitecture
 
